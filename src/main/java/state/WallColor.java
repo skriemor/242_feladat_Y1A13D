@@ -1,5 +1,6 @@
 package state;
 
+import java.util.Arrays;
 import java.util.List;
 
 public enum WallColor {
@@ -11,6 +12,15 @@ public enum WallColor {
 
     WallColor(int id){
         this.colorID=id;
+    }
+    WallColor(String id){
+        this.colorID = Integer.parseInt(id);
+    }
+    public static  WallColor parse(int i){
+        for (WallColor e: values()){
+            if ( e.colorID == i) return e;
+        }
+        return Black;
     }
 
 }

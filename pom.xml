@@ -14,10 +14,12 @@
     <properties>
         <exec.mainClass>inf.unideb.hu.labyrinth/assignment.labyrinth.FirstSolution</exec.mainClass>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>5.8.2</junit.version>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
+        <maven.compiler.release>17</maven.compiler.release>
+        <javafx.version>18</javafx.version>
         <junit.jupiter.version>5.8.2</junit.jupiter.version>
+        <maven.javadoc.version>3.3.2</maven.javadoc.version>
+        <maven.checkstyle.version>3.1.2</maven.checkstyle.version>
         <maven.surefire.version>3.0.0-M6</maven.surefire.version>
         <jacoco.version>0.8.8</jacoco.version>
     </properties>
@@ -87,13 +89,13 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
+            <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.version}</version>
+            <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

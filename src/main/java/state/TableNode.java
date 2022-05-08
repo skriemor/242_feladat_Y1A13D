@@ -16,12 +16,12 @@ public class TableNode {
 
     private Position position;
 
-    public TableNode(/*Position poz,*/ WallColor botcol, WallColor topcol, WallColor leftcol, WallColor rightcol){
+    public TableNode(/*Position poz,*/ int botcol, int topcol, int leftcol, int rightcol){
         //this.position =poz;
-        this.bottomColor=botcol;
-        this.topColor=topcol;
-        this.leftColor=leftcol;
-        this.rightColor=rightcol;
+        this.bottomColor=WallColor.parse(botcol);
+        this.topColor= WallColor.parse(topcol);
+        this.leftColor=WallColor.parse(leftcol);
+        this.rightColor=WallColor.parse(rightcol);
     }
 
     public Position getNodePosition(){
@@ -64,12 +64,25 @@ public class TableNode {
         return leftColor;
     }
 
-    public WallColor getTopColor() {
-        return topColor;
-    }
+    public WallColor getTopColor() {return topColor;}
 
     public Position getPosition() {
         return position;
     }
 
+    public void setBottom(TableNode bottom) {
+        this.bottom = bottom;
+    }
+
+    public void setLeft(TableNode left) {
+        this.left = left;
+    }
+
+    public void setRight(TableNode right) {
+        this.right = right;
+    }
+
+    public void setTop(TableNode top) {
+        this.top = top;
+    }
 }

@@ -1,17 +1,12 @@
 package assignment.labyrinth;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.json.JSONArray;
-import org.json.JSONObject;
-
+import state.Table;
+import state.TableNode;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
-
+import java.util.ArrayList;
 
 
 public class FirstSolution extends Application {
@@ -25,15 +20,15 @@ public class FirstSolution extends Application {
         stage.show();
     }
 
+    private static String getJsonPath(){
+        return FirstSolution.class.getClassLoader().getResource("nodes.json").toString();
+    }
 
     public static void main(String[] args) {
-        try{
-            String jsonString = new String(Files.readAllBytes(Paths.get("src/main/resources/assignment/labyrinth/nodes.json")));
-            JSONObject jsonObject = new JSONObject(jsonString);
-            JSONArray jsonArray = jsonObject.getJSONArray("nodes");
-        }catch (IOException e){
-            e.printStackTrace();
-        }
+        //var jsonPath = getJsonPath();
+        //JsonHandler handler = new JsonHandler("src/main/resources/assignment/labyrinth/nodes.json");
+        //JsonHandler handler = new JsonHandler(jsonPath);
+        //Table table = new Table(handler.getPanes());
         launch();
     }
 }
