@@ -1,0 +1,100 @@
+{
+  "nodes": [
+    {
+      "leftColor": 0,
+      "rightColor": 3,
+      "topColor": 0,
+      "bottomColor": 2
+    },
+    {
+      "leftColor": 3,
+      "rightColor": 3,
+      "topColor": 0,
+      "bottomColor": 1
+    },
+    {
+      "leftColor": 3,
+      "rightColor": 1,
+      "topColor": 2,
+      "bottomColor": 2
+    },
+    {
+      "leftColor": 1,
+      "rightColor": 0,
+      "topColor": 0,
+      "bottomColor": 3
+    },
+    {
+      "leftColor": 0,
+      "rightColor": 2,
+      "topColor": 2,
+      "bottomColor": 1
+    },
+    {
+      "leftColor": 2,
+      "rightColor": 3,
+      "topColor": 1,
+      "bottomColor": 2
+    },
+    {
+      "leftColor": 3,
+      "rightColor": 2,
+      "topColor": 2,
+      "bottomColor": 1
+    },
+    {
+      "leftColor": 2,
+      "rightColor": 0,
+      "topColor": 3,
+      "bottomColor": 3
+    },
+    {
+      "leftColor": 0,
+      "rightColor": 2,
+      "topColor": 1,
+      "bottomColor": 3
+    },
+    {
+      "leftColor": 2,
+      "rightColor": 3,
+      "topColor": 2,
+      "bottomColor": 1
+    },
+    {
+      "leftColor": 3,
+      "rightColor": 2,
+      "topColor": 1,
+      "bottomColor": 2
+    },
+    {
+      "leftColor": 2,
+      "rightColor": 0,
+      "topColor": 3,
+      "bottomColor": 1
+    },
+    {
+      "leftColor": 0,
+      "rightColor": 2,
+      "topColor": 3,
+      "bottomColor": 0
+    },
+    {
+      "leftColor": 2,
+      "rightColor": 2,
+      "topColor": 1,
+      "bottomColor": 3
+    },
+    {
+      "leftColor": 2,
+      "rightColor": 3,
+      "topColor": 2,
+      "bottomColor": 0
+    },
+    {
+      "leftColor": 3,
+      "rightColor": 0,
+      "topColor": 1,
+      "bottomColor": 0
+    }
+  ]
+}
